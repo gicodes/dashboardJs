@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* fonts and text custom styles */subt
+h1, h2, h3, h4, h6 {
+  display: block;
+  font-weight: 501;
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 35px; }
+h3 { font-size: 25px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px ;}
+h6 { font-size: 12px; }
+
+.title {
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.subtitle {
+  font-weight: 20;
+  font-size: 20px;
+}
+
+.text-gray { color: #909090; }
+.text-light { color: lightgrey; }
+.text-info { color: lightblue; }
+.text-secondary { color: cornflowerblue; }
+.text-success { color: rgb(0, 160, 0); }
+.text-warning { color: orange; }
+
+.w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-50 { width: 50%; }
+.y-center { align-content: center;}
+.mb--20 { margin-bottom: -20px; }
