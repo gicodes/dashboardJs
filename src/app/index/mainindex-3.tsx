@@ -2,8 +2,17 @@ const IndexButtonGroup = () => {
   return (
     <>
       <div className="button-group">
-        <div className="index-start">Go to Dashboard</div>
-        <div className="index-watch">Go to Github</div>
+        <div className="index-start">
+          <a href="/dashboard">
+            Go to Dashboard
+          </a>
+        </div>
+
+        <div className="index-watch">
+          <a href="https://github.com/gicodes/dashboardJs">
+            Go to Github
+          </a>
+        </div>
       </div>
     </>
   );

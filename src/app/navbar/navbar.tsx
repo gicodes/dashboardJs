@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 // This component is built with Tailwind Navbar template
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
 ]
@@ -43,7 +43,7 @@ export default function Navbar() {
   const profileDropDown = 
     <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
       {/* Active: "bg-gray-100 outline-none", Not Active: ""  */}
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-0">Dashboard</a>
+      <a href="/dashboard" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-0">Dashboard</a>
       <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-1">Settings</a>
       <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-2">Sign out</a>
     </div>
