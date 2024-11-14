@@ -42,37 +42,37 @@ A light-weight Next + Material + Tailwind Template that is giving glimpses of wh
 
 src/app/
 
-├── page.tsx                     *Index Page
+├── page.tsx                    
 ├
 ├── index/
-├── ├── index.scss               *Main SCSS styling for Home page
-├── ├── text-box.tsx             *Main body text component for Home
-├── ├── image-box.tsx            *Image slider component for Home
-├── ├── btn-group.tsx            *Button group component for Home
-├── ├── footer.tsx               *Footer component for Home
+├── ├── index.scss               
+├── ├── text-box.tsx             
+├── ├── image-box.tsx            
+├── ├── btn-group.tsx            
+├── ├── footer.tsx               
 ├ 
 ├── dashboard/
-├── ├── page.tsx                 *Dashboard index page
-├── ├── alert.tsx                *Alert component used in header
-├── ├── header.tsx               *Header component for Dashboard
-├── ├── form.tsx                 *Feedback form on the dashboard
-├── ├── dashboard.scss           *SCSS styling for Dashboard page
+├── ├── page.tsx                 
+├── ├── alert.tsx                
+├── ├── header.tsx               
+├── ├── form.tsx                 
+├── ├── dashboard.scss           
 ├── ├── 
-├── ├── hero/                    *Hero components for Dashboard
+├── ├── hero/                    
 ├── ├── ├── utilities/
-├── ├── ├── ├── badger.tsx       *hero component used across 1&2
+├── ├── ├── ├── badger.tsx      
 ├── ├
-├── ├── hero.tsx                 *Main hero component
-├── ├── hero-1.tsx               *Additional hero variants
+├── ├── hero.tsx                 
+├── ├── hero-1.tsx               
 ├── └── hero-2.tsx  
 ├── ├ 
 ├── ├── main/
 ├── ├── utilities/
-├── ├── ├──  bar-chart.tsx         *bar-chart component used in main
-├── ├── ├──  tech-stack.tsx        *tech-stack component used in main
-├── ├── ├──  main-switch.tsx       *switch component used between bc and ts
+├── ├── ├──  bar-chart.tsx         
+├── ├── ├──  tech-stack.tsx        
+├── ├── ├──  main-switch.tsx       
 ├── ├                              
-├── ├── main.tsx                   *Main dashboard section
+├── ├── main.tsx                   
 ├── 
 ----
 
