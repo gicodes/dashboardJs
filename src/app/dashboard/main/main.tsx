@@ -1,8 +1,8 @@
 import { Paper, Stack } from '@mui/material';
-import DashBarChart from './bar-chart';
-import { MainSwitch } from './main-switch';
+import DashBarChart from './utilities/bar-chart';
+import { MainSwitch } from './utilities/main-switch';
 import { useState } from 'react';
-import TechStack from './tech-stack';
+import TechStack from './utilities/tech-stack';
 
 export const DashMain = () => {
   const [ chart, setChart ] = useState(true);
@@ -26,6 +26,7 @@ export const DashMain = () => {
       }}
     >
       <Stack 
+        marginY={1}
         display={'flex'}
         direction={'row'}
         justifyContent={'space-between'}

@@ -41,7 +41,7 @@ const Hero = () => {
           padding='5px 20px 5px' 
           spacing={2}
         >
-          <h4>Welcome, {user}</h4>
+          <h4>Hello, I am {user}</h4>
           <p>{title}</p>
 
           <Stack 
@@ -56,7 +56,7 @@ const Hero = () => {
           src={"/bg-card2.jpg"} 
           height={100}
           width={100}
-          alt='welcome to your dash'
+          alt='welcome to your dashboard'
           className='gif-box'
         />
       </Grid2>

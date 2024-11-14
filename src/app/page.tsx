@@ -1,8 +1,8 @@
-import "./index/mainindex.scss";
+import "./index/index.scss";
 
-import ImageSlider from "./index/mainindex-2";
-import MainBodyText from "./index/mainindex-1";
-import IndexButtonGroup from "./index/mainindex-3";
+import ImageSlider from "./index/image-box";
+import MainBodyText from "./index/text-box";
+import IndexButtonGroup from "./index/btn-group";
 import Footer from "./index/footer";
 
 export default function Home() {

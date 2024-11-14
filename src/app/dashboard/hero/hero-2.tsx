@@ -1,6 +1,6 @@
 import { Badge, Card, Stack } from '@mui/material';
 import PaidIcon from '@mui/icons-material/Paid';
-import Badger from './badger';
+import Badger from './utilities/badger';
 
 const Hero2 = () => {
   return (

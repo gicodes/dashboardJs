@@ -1,6 +1,6 @@
 import { BusinessCenterSharp } from '@mui/icons-material';
 import { Badge, Card, Stack } from '@mui/material';
-import Badger from './badger';
+import Badger from './utilities/badger';
 
 const Hero1 = () => {
   return (

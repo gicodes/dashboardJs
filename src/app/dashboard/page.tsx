@@ -1,9 +1,9 @@
 "use client";
 import './dashboard.scss';
 
-import Hero from './hero/hero';
+import Hero from './hero/profile';
 import Header from './header';
-import DashMain2 from './main/main-2';
+import DashMain2 from './form';
 import { DashMain } from './main/main';
 import { Card, Grid2 } from '@mui/material';
 import Hero1 from './hero/hero-1';

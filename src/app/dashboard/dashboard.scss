@@ -1,6 +1,6 @@
 .left-chip {
-  border: 0.2px solid gray;
   border-radius: 25px 0 0 25px;
+  border: 0.2px solid gray;
   background: silver;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .left-chip, .right-chip {
-  box-shadow: 0.2px 0.1px;
+  // box-shadow: 0.2px 0.1px;
   font-size: smaller;
   text-align: center;
   min-width: 100px;
@@ -42,6 +42,17 @@
   width: max-content;
   border-radius: 50%;
   border: 0.1px solid white;
+  background-color: silver;
+} 
+
+.span-border {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  min-width: none;
+  max-width: 500px;
+  border: 0.1px solid gray;
   background-color: silver;
 } 
 

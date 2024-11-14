@@ -22,9 +22,8 @@ export default function Navbar() {
   const handleSmMenuDropDown = () => setSmMenuDrop((prev) => !prev);
   
   const smMenuDropDown = 
-    <div id="mobile-menu">
+    <div>
       <div className="space-y-1 px-2 pb-3 pt-2">
-        {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
         {navigation.map((item) => (
           <a 
             href={item.href} 
@@ -43,15 +42,13 @@ export default function Navbar() {
 
   const profileDropDown = 
     <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
-      {/* Active: "bg-gray-100 outline-none", Not Active: ""  */}
-      <a href="/dashboard" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-0">Dashboard</a>
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-1">Settings</a>
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-2">Sign out</a>
+      <a href="/dashboard" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem">Dashboard</a>
+      <a href="https://github.com/gicodes/dashboardjs" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem">Github</a>
     </div>
 
   return (
     <nav className="bg-gray-800">
-      <div className="px-3 mx-auto">
+      <div className="px-3 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div 
             onClick={handleSmMenuDropDown}
