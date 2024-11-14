@@ -9,7 +9,7 @@ const MainBodyText = () => {
   return (
     <>
       <div className="body-text-1">
-        <h2 className="p-1 title">
+        <h2 className="p-1 title typo-fw1">
           <div className="flex mb--20">
             <span className="text-giving text-info">G</span>
             <span className="y-center">
@@ -26,7 +26,7 @@ const MainBodyText = () => {
         </h2>
         <div className="subtitle my-3">
           'Technology is best when it brings people together'
-          <span className="title"> — Matt Mullenweg</span>
+          <span className="title typo-fw1"> — Matt Mullenweg</span>
         </div>
       </div>
     </>

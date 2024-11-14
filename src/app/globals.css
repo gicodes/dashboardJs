@@ -57,6 +57,10 @@ h6 { font-size: 12px; }
   font-size: smaller;
 }
 
+.typo-fw1 {
+  font-weight: 400;
+}
+
 .typo-f1 { color: wheat; }
 .typo-sm { font-size: small;}
 .typo-xs { font-size: x-small;}
