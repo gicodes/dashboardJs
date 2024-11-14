@@ -70,7 +70,8 @@ h6 { font-size: 12px; }
 .text-gray { color: #909090; }
 .text-light { color: lightgrey; }
 .text-info { color: lightblue; }
-.text-link { color: #318CE7 }
+.text-link { color: #318CE7; }
+.text-dark { color: #404040; }
 .text-secondary { color: #1a1a1a}
 .text-warning { color: orange; }
 .text-print { color: #4040a1;}

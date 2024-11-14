@@ -14,7 +14,7 @@ const Footer = () => {
     <Box 
       padding={2}
       columnGap={5}
-      marginBottom={4}
+      marginBottom={2}
       sx={{
         display: 'flex',
         justifyContent: 'center'

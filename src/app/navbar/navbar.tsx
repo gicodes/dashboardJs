@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 // This component is built with Tailwind Navbar template
@@ -9,7 +10,7 @@ const navigation = [
   { name: 'Projects', href: '#', current: false },
 ]
 
-function classNames(...classes: any[]) {
+function classNames(...classes: (string | undefined | null | false)[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -17,9 +18,9 @@ export default function Navbar() {
   const [ smMenuDrop, setSmMenuDrop ] = useState(false);
   const [ profileDrop, setProfileDrop ] = useState(false);
   
-  const handleProfileDropDown = () =>  setProfileDrop(!profileDrop);
-  const handleSmMenuDropDown = () => setSmMenuDrop(!smMenuDrop);
-
+  const handleProfileDropDown = () => setProfileDrop((prev) => !prev);
+  const handleSmMenuDropDown = () => setSmMenuDrop((prev) => !prev);
+  
   const smMenuDropDown = 
     <div id="mobile-menu">
       <div className="space-y-1 px-2 pb-3 pt-2">
@@ -111,7 +112,9 @@ export default function Navbar() {
                 <button type="button" className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                   <span className="absolute -inset-1.5"></span>
                   <span className="sr-only">Open user menu</span>
-                  <img 
+                  <Image
+                    width={40}
+                    height={40}
                     className="size-8 rounded-full" alt="Gicodes as a Profile photo placeholder"
                     src="https://media.licdn.com/dms/image/v2/D4D03AQH2gPWxPmvVIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715115476831?e=1736985600&v=beta&t=W3c7IMyw2TfRI6Lzx701U2-BRR7KykTLOj8b81dFR54"/>
                 </button>

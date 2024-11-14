@@ -2,13 +2,18 @@ import { Card, Grid2, Stack } from '@mui/material'
 import Image from 'next/image';
 import React from 'react'
 
-let user = "Gi Doe";
-let title = "Software Engineer | Javascript Dev"
+interface ProgressChipProps {
+  inv: unknown
+  text: string
+}
 
-function ProgressChip({ inv, text }: string | number | any) {
+const user: string = "Gi Doe";
+const title: string = "Software Engineer | Javascript Dev"
+
+const ProgressChip: React.FC<ProgressChipProps> = ({ inv, text }) => {
   return (
     <div className={inv ? 'right-chip' : 'left-chip'}> 
-      <span className={inv ? '' : 'text-white'}><b>{text}</b></span>
+      <span className={inv ? '' : 'text-dark'}>{text}</span>
     </div>
   )
 }
@@ -43,8 +48,8 @@ const Hero = () => {
             direction={'row'}
             padding={'40px 0'}
           >
-            <ProgressChip text="Mid-Level" />
-            <ProgressChip inv text="100%" />
+            <ProgressChip inv={false} text="Mid-Level" />
+            <ProgressChip inv={true} text="100%" />
           </Stack>
         </Stack>
         <Image 
@@ -53,7 +58,7 @@ const Hero = () => {
           width={100}
           alt='welcome to your dash'
           className='gif-box'
-          />
+        />
       </Grid2>
     </Card>
   )

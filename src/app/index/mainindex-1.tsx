@@ -25,7 +25,7 @@ const MainBodyText = () => {
           </div>
         </h2>
         <div className="subtitle my-3">
-          'Technology is best when it brings people together'
+          &#39;Technology is best when it brings people together&#39;
           <span className="title typo-fw1"> — Matt Mullenweg</span>
         </div>
       </div>

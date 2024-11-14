@@ -1,6 +1,13 @@
-const Badger = ({ text, value }: string | number | any) => {
-  let vCol = ((value==="$30 - 40k") ? 'typo-1' : 'typo');
-  let tCol = ((value==="$30 - 40k") ? 'typo-f2' : 'typo-f1');
+import React from 'react';
+
+interface BadgerProps {
+  text: string;
+  value: string;
+}
+
+const Badger: React.FC<BadgerProps> = ({ text, value }) => {
+  const vCol = ((value==="$30 - 40k") ? 'typo-1' : 'typo');
+  const tCol = ((value==="$30 - 40k") ? 'typo-f2' : 'typo-f1');
 
   return (
     <div className='text-center'> 
@@ -10,4 +17,4 @@ const Badger = ({ text, value }: string | number | any) => {
   )
 }
 
-export default Badger
+export default Badger;

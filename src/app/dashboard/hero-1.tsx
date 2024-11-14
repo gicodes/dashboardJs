@@ -1,4 +1,4 @@
-import { BusinessCenterSharp, Paid } from '@mui/icons-material';
+import { BusinessCenterSharp } from '@mui/icons-material';
 import { Badge, Card, Stack } from '@mui/material';
 import Badger from './badger';
 
