@@ -1,6 +1,7 @@
 # DashboardJs - BETA
 
-This is a simple Next.js application with two main routes: Home and Dashboard. Each route has distinct content and styles, offering different functionality and layout components.
+A light-weight Next + Material + Tailwind Template that is giving glimpses of what I do with React + NextJs + TS.
+- Consisting two (2) index pages. The essence of this project can be seen on Dashboard.
 
 
 ### Table of Contents
@@ -41,37 +42,37 @@ This is a simple Next.js application with two main routes: Home and Dashboard. E
 
 src/app/
 
-├── page.tsx                     # Index Page
+├── page.tsx                     *Index Page
 ├
 ├── index/
-├── ├── index.scss               # Main SCSS styling for Home page
-├── ├── text-box.tsx             # Main body text component for Home
-├── ├── image-box.tsx            # Image slider component for Home
-├── ├── btn-group.tsx            # Button group component for Home
-├── ├── footer.tsx               # Footer component for Home
+├── ├── index.scss               *Main SCSS styling for Home page
+├── ├── text-box.tsx             *Main body text component for Home
+├── ├── image-box.tsx            *Image slider component for Home
+├── ├── btn-group.tsx            *Button group component for Home
+├── ├── footer.tsx               *Footer component for Home
 ├ 
 ├── dashboard/
-├── ├── page.tsx                 # Dashboard index page
-├── ├── alert.tsx                # Alert component used in header
-├── ├── header.tsx               # Header component for Dashboard
-├── ├── form.tsx                 # Feedback form on the dashboard
-├── ├── dashboard.scss           # SCSS styling for Dashboard page
+├── ├── page.tsx                 *Dashboard index page
+├── ├── alert.tsx                *Alert component used in header
+├── ├── header.tsx               *Header component for Dashboard
+├── ├── form.tsx                 *Feedback form on the dashboard
+├── ├── dashboard.scss           *SCSS styling for Dashboard page
 ├── ├── 
-├── ├── hero/                    # Hero components for Dashboard
+├── ├── hero/                    *Hero components for Dashboard
 ├── ├── ├── utilities/
-├── ├── ├── ├── badger.tsx       # hero component used across 1&2
+├── ├── ├── ├── badger.tsx       *hero component used across 1&2
 ├── ├
-├── ├── hero.tsx                 # Main hero component
-├── ├── hero-1.tsx               # Additional hero variants
+├── ├── hero.tsx                 *Main hero component
+├── ├── hero-1.tsx               *Additional hero variants
 ├── └── hero-2.tsx  
 ├── ├ 
 ├── ├── main/
 ├── ├── utilities/
-├── ├── ├──  bar-chart.tsx         # bar-chart component used in main
-├── ├── ├──  tech-stack.tsx        # tech-stack component used in main
-├── ├── ├──  main-switch.tsx       # switch component used between bc and ts
+├── ├── ├──  bar-chart.tsx         *bar-chart component used in main
+├── ├── ├──  tech-stack.tsx        *tech-stack component used in main
+├── ├── ├──  main-switch.tsx       *switch component used between bc and ts
 ├── ├                              
-├── ├── main.tsx                   # Main dashboard section
+├── ├── main.tsx                   *Main dashboard section
 ├── 
 ----
 
@@ -92,9 +93,9 @@ To set up and run this project locally:
 
 ## Usage
 
-1. Home Page: The main entry page. Accessed via /.
+1. Home Page: The main entry page. Accessed via "/"
 
-2. Dashboard Page: A more complex layout accessed via /dashboard.
+2. Dashboard Page: A more complex layout accessed via "/dashboard"
 
   Contains a header, hero sections, and main content sections.
 

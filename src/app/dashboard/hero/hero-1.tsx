@@ -22,7 +22,7 @@ const Hero1 = () => {
         <Badge className='badge-border text-tertiary'>
           <BusinessCenterSharp color='inherit' />
         </Badge>
-        <Badger text="Active Repos" value={'10 +'} />
+        <Badger text="Active Repos" value={'10+'} />
       </Stack>
 
       <Stack 
