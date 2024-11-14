@@ -1,13 +1,13 @@
 "use client";
 import './dashboard.scss';
 
-import Hero from './hero';
-import Hero1 from './hero-1';
-import Hero2 from './hero-2';
+import Hero from './hero/hero';
 import Header from './header';
-import DashMain2 from './main-2';
-import { DashMain } from './main';
+import DashMain2 from './main/main-2';
+import { DashMain } from './main/main';
 import { Card, Grid2 } from '@mui/material';
+import Hero1 from './hero/hero-1';
+import Hero2 from './hero/hero-2';
 
 export default function Dashboard() {
   return (

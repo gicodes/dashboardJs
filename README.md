@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DashboardJs - BETA
 
-## Getting Started
+This is a simple Next.js application with two main routes: Home and Dashboard. Each route has distinct content and styles, offering different functionality and layout components.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Features
+- Project Structure
+- Getting Started
+- Usage
+- Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+1. Home Page
 
-To learn more about Next.js, take a look at the following resources:
+Main layout with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+i. introductory text
+ii. image slider
+iii. button group
+iv. Footer component
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Styled using global.css and index.scss files.
 
-## Deploy on Vercel
+2. Dashboard Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contains a dashboard layout with 
+i. header 
+ii. hero components
+iii. main content sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Styled using Material UI components, global.css and dashboard.scss files.
+
+
+## Project Structure
+
+/pages
+├── index/mainindex.scss           # Main SCSS styling for Home page
+├── index/mainindex-1.tsx          # Main body text component for Home
+├── index/mainindex-2.tsx          # Image slider component for Home
+├── index/mainindex-3.tsx          # Button group component for Home
+├── index/footer.tsx               # Footer component for Home
+├── dashboard/dashboard.scss       # SCSS styling for Dashboard page
+├── dashboard/header.tsx           # Header component for Dashboard
+├── dashboard/hero                 # Hero components for Dashboard
+│   ├── hero.tsx                   # Main hero component
+│   ├── hero-1.tsx                 # Additional hero variant
+│   └── hero-2.tsx                 # Second additional hero variant
+├── dashboard/main                 # Main components for Dashboard
+│   ├── main.tsx                   # Main dashboard section
+│   └── main-2.tsx                 # Secondary main dashboard section
+----
+
+
+### Getting Started
+
+To set up and run this project locally:
+
+1. Clone the repository - run
+                `git clone https://github.com/gicodes/dashboardJs.git`
+                `cd dashboardJs`
+2. Install Dependencies - run
+                `npm install`
+3. Start the Development server - run
+                `npm run dev`
+4. Visit the application on `https://localhost:3000`
+
+
+## Usage
+
+1. Home Page: The main entry page. Accessed via /.
+
+2. Dashboard Page: A more complex layout accessed via /dashboard.
+
+  Contains a header, hero sections, and main content sections.
+
+
+## Technologies Used
+  
+  1. Next.js
+  2. Typescript
+  3. Material UI
+  4. Tailwind CSS
+  5. Sass (Scss)

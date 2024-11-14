@@ -22,6 +22,7 @@ export const DashMain = () => {
           md: '60%',
         },
         margin: 'auto',
+        minHeight: '333px'
       }}
     >
       <Stack 

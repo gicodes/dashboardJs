@@ -1,4 +1,5 @@
-import { Card, Box, Stack, Paper } from '@mui/material'
+import { Card, Box, Stack, Paper } from '@mui/material';
+import { useMediaQuery, useTheme } from '@mui/material';
 import React from 'react'
 
 const dbs = [ "MongoDB", "Firebase", "MySQL", ];
@@ -8,6 +9,9 @@ const dps = [ "Github", "Vercel", "Netlify", "AWS", ]
 const libs = [ "React", "NodeJs", "Tailwind", "Material-UI"];
 
 const TechStack = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Card sx={{ p: 2 }}>
       <Box 
@@ -16,6 +20,8 @@ const TechStack = () => {
           padding: '5px',
           maxWidth: 600,
           mx: 'auto',
+          minHeight: '333px',
+          height: isSmallScreen ? 333 : 360,
         }}
       > 
         <Stack 
