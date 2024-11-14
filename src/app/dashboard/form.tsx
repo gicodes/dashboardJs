@@ -59,7 +59,7 @@ const DashMain2 = () => {
         <h5 className='text-center mt-6'>
           <b>Feedback Form </b>
           <span className='block typo-sm'>
-            Please leave a review, I &#339; d appreciate
+            Please leave a review, I&#39;d appreciate
           </span>
         </h5>
 
