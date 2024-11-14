@@ -20,8 +20,7 @@ const TechStack = () => {
           padding: '5px',
           maxWidth: 600,
           mx: 'auto',
-          minHeight: '333px',
-          height: isSmallScreen ? 333 : 360,
+          height: isSmallScreen ? 420 : 360,
         }}
       > 
         <Stack 

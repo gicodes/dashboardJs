@@ -47,7 +47,8 @@ export default function DashBarChart() {
         sx={{
           width: '100%',
           padding: '5px',
-          height: isSmallScreen ? 333 : 360,
+          paddingTop: '50px',
+          height: isSmallScreen ? 420 : 360,
           maxWidth: 600,
           mx: 'auto',
         }}
