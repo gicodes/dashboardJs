@@ -13,6 +13,7 @@ export default function Dashboard() {
   return (
     <Card sx={{
       background: 'silver',
+      height: '100vh',
     }}>
       <Header />
       <Grid2 
