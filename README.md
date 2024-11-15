@@ -42,39 +42,31 @@ A light-weight Next + Material + Tailwind Template that is giving glimpses of wh
 
 src/app/
 
-├── page.tsx                    
-├
-├── index/
-├── ├── index.scss               
-├── ├── text-box.tsx             
-├── ├── image-box.tsx            
-├── ├── btn-group.tsx            
-├── ├── footer.tsx               
-├ 
-├── dashboard/
-├── ├── page.tsx                 
-├── ├── alert.tsx                
-├── ├── header.tsx               
-├── ├── form.tsx                 
-├── ├── dashboard.scss           
-├── ├── 
-├── ├── hero/                    
-├── ├── ├── utilities/
-├── ├── ├── ├── badger.tsx      
-├── ├
-├── ├── hero.tsx                 
-├── ├── hero-1.tsx               
-├── └── hero-2.tsx  
-├── ├ 
-├── ├── main/
-├── ├── utilities/
-├── ├── ├──  bar-chart.tsx         
-├── ├── ├──  tech-stack.tsx        
-├── ├── ├──  main-switch.tsx       
-├── ├                              
-├── ├── main.tsx                   
-├── 
-----
+├─ page.tsx                    
+├─ index/
+├─ ├─ index.scss               
+├─ ├─ text-box.tsx             
+├─ ├─ image-box.tsx            
+├─ ├─ btn-group.tsx            
+├─ ├─ footer.tsx               
+├─ dashboard/
+├─ ├─ page.tsx                 
+├─ ├─ alert.tsx                
+├─ ├─ header.tsx               
+├─ ├─ form.tsx                 
+├─ ├─ dashboard.scss           
+├─ ├── hero/                    
+├─ ├─ ├─ utilities/
+├─ ├─ ├─ ├── badger.tsx      
+├─ ├─ ├─ hero.tsx                 
+├─ ├─ ├─ hero-1.tsx               
+├─ └─ ├─ hero-2.tsx  
+├─ ├── main/
+├─ ├──├─ utilities/
+├─ ├─ ├─ ├── bar-chart.tsx         
+├─ ├─ ├─ ├── tech-stack.tsx        
+├─ ├─ ├─ ├── main-switch.tsx                                     
+├─ ├─ ├─ main.tsx                   
 
 
 ### Getting Started

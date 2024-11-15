@@ -12,16 +12,15 @@
   }
   
   /* ImageSlider Custom styles */
-  .img-box { width: 75%; }
   .img:hover { border: 1px solid #303030; }
   .img { border-radius: 3%; }
 
   .fixed-size {
     width: auto;
-    height: 280px;
+    margin: auto;
+    height: auto;
     min-width: 360px;
     object-fit: cover;
-    margin: auto;
   }
 }             
 
@@ -66,11 +65,6 @@
   .section-container,
   .block-sm {
     display: block;
-  }
-
-  .img-box {
-    width: 100%;
-    min-width: 100%;
   }
 
   .index-btn-group {

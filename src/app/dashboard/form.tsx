@@ -35,9 +35,10 @@ const DashMain2 = () => {
           event.preventDefault();
           const formData = new FormData(event.currentTarget);
           const formJson = Object.fromEntries((formData).entries());
+          console.log(formJson);
 
           try {
-            const response = await fetch('/api/sendFeedback', {
+            const response = await fetch('/api/send-feedback', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -79,9 +80,9 @@ const DashMain2 = () => {
               <FormLabel> Do you like DashboardJs?</FormLabel>
               <RadioGroup row
                 defaultValue="yes"
-                name="do-you-like"
+                name="rateMe"
               >
-                <FormControlLabel value="female" control={<Radio />} label="Yes" />
+                <FormControlLabel value="yes" control={<Radio />} label="Yes" />
                 <FormControlLabel disabled value="maybe" control={<Radio />} label="Maybe" />
                 <FormControlLabel value="no" control={<Radio />} label="No" />
               </RadioGroup>
@@ -93,7 +94,7 @@ const DashMain2 = () => {
               <InputLabel>What brought you to Dashboard?</InputLabel>
               <Select 
                 value={"hiring"} 
-                name="what-brought-you"
+                name="whatInterestsYou"
                 label="What brought you to Dashboard?"
               >
                 <MenuItem value="hiring">Hiring</MenuItem>
@@ -105,7 +106,7 @@ const DashMain2 = () => {
           </Box>
 
           <TextField 
-            name="how-to-improve"
+            name="yourRecon"
             variant="standard"
             className='w-100 my-2' 
             label="How do you think I can improve my work?" 
@@ -120,11 +121,13 @@ const DashMain2 = () => {
             <TextField
               className='w-50'
               variant='filled'
+              name='email'
               label="Your e-mail please?"
             />
             <Button 
               variant='contained'
-              type="submit">
+              type="submit"
+            >
                 Email me
             </Button>              
           </Stack>
