@@ -35,7 +35,6 @@ const DashMain2 = () => {
           event.preventDefault();
           const formData = new FormData(event.currentTarget);
           const formJson = Object.fromEntries((formData).entries());
-          console.log(formJson);
 
           try {
             const response = await fetch('/api/send-feedback', {

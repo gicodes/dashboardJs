@@ -26,12 +26,12 @@ const ImageSlider: React.FC = () => {
     <div className="mx-auto md:h-96 lg:h-auto">
       {randomImage && (
         <Image
-        className="img fixed-size"
-        src={randomImage}
-        alt="Randomly selected image"
-        height={100}
-        width={100}
-      />      
+          className="img fixed-size"
+          src={randomImage}
+          alt="Randomly selected image"
+          height={100}
+          width={100}
+        />      
       )}
     </div>
   );
