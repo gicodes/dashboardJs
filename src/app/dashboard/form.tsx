@@ -98,9 +98,9 @@ const DashMain2 = () => {
                 label="What brought you to Dashboard?"
               >
                 <MenuItem value="hiring">Hiring</MenuItem>
-                <MenuItem value="gig">Paid Gig</MenuItem>
-                <MenuItem value="jk">Just Random</MenuItem>
-                <MenuItem value="others">Others</MenuItem>
+                <MenuItem value="paid Gig">Paid Gig</MenuItem>
+                <MenuItem value="Just Random">Just Random</MenuItem>
+                <MenuItem value="Others">Others</MenuItem>
               </Select>
             </FormControl>
           </Box>

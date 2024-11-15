@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_EMAILUSER,
-      to: userInput?.email,
+      to: process.env.NEXT_PUBLIC_EMAILUSER,
       subject: 'New Feedback Submission',
       text: `
         Name: ${userInput?.name || 'N/A'}
