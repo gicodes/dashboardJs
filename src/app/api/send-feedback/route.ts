@@ -14,14 +14,15 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_EMAILUSER,
-      to: process.env.NEXT_PUBLIC_EMAILUSER,
+      to: userInput?.email || process.env.NEXT_PUBLIC_EMAILUSER,
       subject: 'New Feedback Submission',
       text: `
-        Name: ${userInput?.name || 'N/A'}
-        Likes DashboardJs? ${userInput?.rateMe || 'N/A'}
-        Reason for visiting: ${userInput?.whatInterestsYou || 'N/A'}
-        Improvement suggestion: ${userInput?.yourRecon || 'N/A'}
-        User email: ${userInput?.email || 'N/A'}
+        Here is a copy of the form you filled on DashboardJs- Beta...
+        \n\n
+        Name: ${userInput?.name || 'Empty field'}
+        Fancy DashboardJs? ${userInput?.rateMe || 'Maybe'}
+        Your review and recommendation: ${userInput?.yourRecon || 'Empty field'}
+        What brings you to DashboardJs: ${userInput?.whatInterestsYou || 'I am a fan'}
       `,
     };
     await transporter.sendMail(mailOptions);

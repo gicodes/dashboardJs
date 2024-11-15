@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import Card from '@mui/material/Card';
 
-const DashMain2 = () => {
+const FeedbackForm = () => {
   return (
     <Card 
       elevation={4}
@@ -90,14 +90,14 @@ const DashMain2 = () => {
           
           <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
-              <InputLabel>What brought you to Dashboard?</InputLabel>
+              <InputLabel>What brings you to DashboardJs?</InputLabel>
               <Select 
-                value={"hiring"} 
+                defaultValue={"hiring"}
                 name="whatInterestsYou"
-                label="What brought you to Dashboard?"
+                label="What brings you to DashboardJs?"
               >
-                <MenuItem value="hiring">Hiring</MenuItem>
-                <MenuItem value="paid Gig">Paid Gig</MenuItem>
+                <MenuItem value="Hiring">Hiring</MenuItem>
+                <MenuItem value="Paid Gig">Paid Gig</MenuItem>
                 <MenuItem value="Just Random">Just Random</MenuItem>
                 <MenuItem value="Others">Others</MenuItem>
               </Select>
@@ -136,4 +136,4 @@ const DashMain2 = () => {
   )
 }
 
-export default DashMain2
+export default FeedbackForm

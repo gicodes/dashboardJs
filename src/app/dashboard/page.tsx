@@ -1,13 +1,13 @@
 "use client";
 import './dashboard.scss';
 
-import Hero from './hero/profile';
 import Header from './header';
-import DashMain2 from './form';
-import { DashMain } from './main/main';
-import { Card, Grid2 } from '@mui/material';
+import Hero from './hero/profile';
 import Hero1 from './hero/hero-1';
 import Hero2 from './hero/hero-2';
+import FeedbackForm from './form';
+import { DashMain } from './main/main';
+import { Card, Grid2 } from '@mui/material';
 
 export default function Dashboard() {
   return (
@@ -36,7 +36,7 @@ export default function Dashboard() {
         justifyContent={'space-around'} 
       >
         <DashMain />
-        <DashMain2 />
+        <FeedbackForm />
       </Grid2>
     </Card>    
   )

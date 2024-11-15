@@ -8,7 +8,7 @@ interface TSBadgeProps {
 
 const dbs = [ "MongoDB", "Firebase", "MySQL", ];
 const fws = [ "NextJS*", "ExpressJS", "Flutter", ];
-const langs = [ "Javascript*", "Dart", "Python", ];
+const langs = [ "Javascript*", "Typescript*", "Dart", "Python", ];
 const dps = [ "Github", "Vercel*", "Netlify", "AWS", ]
 const libs = [ "React*", "NodeJs", "Material-UI*", "Tailwind CSS*"];
 
