@@ -1,18 +1,29 @@
 import { 
+  WbSunny, 
   MailSharp,
   SearchSharp, 
   AddCircleSharp,
   NightsStaySharp, 
 } from '@mui/icons-material'
-import { Badge, Box, Stack } from '@mui/material';
 import ShowAlert from './alert';
 import { useState } from 'react';
+import { Badge, Box, Stack } from '@mui/material';
 
+interface HeaderProps {
+  handleDarkMode: () => void;
+  darkMode: boolean;
+}
 
-const Header = () => {
+const Header: React.FC<HeaderProps> = ({ 
+  handleDarkMode,
+  darkMode,
+  // add other children properties or methods here
+}) => {
   const [ showAlert, setShowAlert ] = useState(false);
+  // controls the color of the icons as a sub-feature of darkMode
+  const color = darkMode ? 'primary' : 'action';
 
-  const handleClick = () => {
+  const handleDummyClick = () => {
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 3000);
   };
@@ -25,8 +36,8 @@ const Header = () => {
         justifyContent: 'space-between'
       }}
     > 
-      <Badge onClick={handleClick} className='mx-2'>
-        <SearchSharp />
+      <Badge onClick={handleDummyClick} className='mx-2'>
+        <SearchSharp color={color} />
       </Badge>
       
       <Stack
@@ -34,16 +45,16 @@ const Header = () => {
         margin={'0 2% 0'}
         spacing={5}
       > 
-        <Badge onClick={handleClick}>
-          <AddCircleSharp color='action' />
+        <Badge onClick={handleDummyClick}>
+          <AddCircleSharp  color={color} />
         </Badge>
 
-        <Badge onClick={handleClick}>
-          <NightsStaySharp />  
-        </Badge>
+        <Badge onClick={handleDarkMode} style={{ cursor: "pointer" }}>
+          {darkMode ? <WbSunny /> : <NightsStaySharp />}
+      </Badge>
         
-        <Badge onClick={handleClick} badgeContent={3} color="primary">
-          <MailSharp color="action" />
+        <Badge onClick={handleDummyClick} badgeContent={3} color="primary">
+          <MailSharp  color={color} />
         </Badge>
       </Stack>
 
