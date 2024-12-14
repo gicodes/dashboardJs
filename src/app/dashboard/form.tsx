@@ -96,10 +96,10 @@ const FeedbackForm = () => {
                 name="whatInterestsYou"
                 label="What brings you to DashboardJs?"
               >
-                <MenuItem value="Hiring">Hiring</MenuItem>
-                <MenuItem value="Paid Gig">Paid Gig</MenuItem>
-                <MenuItem value="Just Random">Just Random</MenuItem>
-                <MenuItem value="Others">Others</MenuItem>
+                <MenuItem value="hiring">hiring</MenuItem>
+                <MenuItem value="paid gig">paid gig</MenuItem>
+                <MenuItem value="just gandom">Just random</MenuItem>
+                <MenuItem value="others">Others</MenuItem>
               </Select>
             </FormControl>
           </Box>

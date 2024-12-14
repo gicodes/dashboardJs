@@ -20,7 +20,7 @@ export async function POST(request: Request) {
         Here is a copy of the form you filled on DashboardJs- Beta...
         \n\n
         Name: ${userInput?.name || 'Empty field'}
-        Fancy DashboardJs? ${userInput?.rateMe || 'Maybe'}
+        Fancy DashboardJs? ${userInput?.rateMe || 'maybe'}
         Your review and recommendation: ${userInput?.yourRecon || 'Empty field'}
         What brings you to DashboardJs: ${userInput?.whatInterestsYou || 'I am a fan'}
       `,
