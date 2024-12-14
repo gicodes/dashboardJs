@@ -21,7 +21,7 @@ const MainBodyText = () => {
             <span>
               of <span className="text-warning">what I do</span> with
             </span>
-            <span className="block text-success">React {plusSign} NextJS {plusSign} TS</span>
+            <span className="block text-success">React {plusSign} Next {plusSign} TS</span>
           </div>
         </h2>
         <div className="subtitle my-3">
