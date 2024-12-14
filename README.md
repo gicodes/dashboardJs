@@ -1,6 +1,6 @@
 # DashboardJs - BETA
 
-A light-weight Next + Material + Tailwind Template that is giving glimpses of what I do with React + NextJs + TS.
+A light-weight Next + Material + Tailwind Template that is giving glimpses of what I do with React + Next + TS.
 - Consisting two (2) index pages. The essence of this project can be seen on Dashboard.
 
 
