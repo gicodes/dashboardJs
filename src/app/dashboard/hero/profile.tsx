@@ -1,4 +1,4 @@
-import { Card, Grid2, Stack } from '@mui/material'
+import { Card, Grid, Stack } from '@mui/material'
 import Image from 'next/image';
 import React from 'react'
 
@@ -31,7 +31,7 @@ const Hero = () => {
         },
       }}
     >
-      <Grid2 
+      <Grid 
         display={'flex'}
         flexWrap={'wrap'}
         className='welcome-card'
@@ -59,7 +59,7 @@ const Hero = () => {
           alt='welcome to your dashboard'
           className='gif-box'
         />
-      </Grid2>
+      </Grid>
     </Card>
   )
 }

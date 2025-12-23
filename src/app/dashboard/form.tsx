@@ -1,5 +1,5 @@
 import { 
-  Grid2, 
+  Grid, 
   Radio,
   Button,
   Select,
@@ -63,7 +63,7 @@ const FeedbackForm = () => {
           </span>
         </h5>
 
-        <Grid2 
+        <Grid 
           marginY={1} 
           padding={2}
         >
@@ -130,7 +130,7 @@ const FeedbackForm = () => {
                 Email me
             </Button>              
           </Stack>
-        </Grid2>
+        </Grid>
       </form>
     </Card>
   )

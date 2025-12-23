@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 // This Component is designed to be authentic, basic and somewhat vanilla.
@@ -21,11 +22,11 @@ const ImageSlider = () => {
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="mx-auto md:h-96 lg:h-auto img-slider">
-      <img
+      <Image
         className="img object-cover w-full h-full"
         src={images[index]}
         alt={
