@@ -1,16 +1,15 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import { useState } from 'react';
 
 // This component is built with Tailwind Navbar template
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
 ]
 
-function classNames(...classes: (string | undefined | null | false)[]): string {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -18,12 +17,13 @@ export default function Navbar() {
   const [ smMenuDrop, setSmMenuDrop ] = useState(false);
   const [ profileDrop, setProfileDrop ] = useState(false);
   
-  const handleProfileDropDown = () => setProfileDrop((prev) => !prev);
-  const handleSmMenuDropDown = () => setSmMenuDrop((prev) => !prev);
-  
+  const handleProfileDropDown = () =>  setProfileDrop(!profileDrop);
+  const handleSmMenuDropDown = () => setSmMenuDrop(!smMenuDrop);
+
   const smMenuDropDown = 
-    <div>
+    <div id="mobile-menu">
       <div className="space-y-1 px-2 pb-3 pt-2">
+        {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"  */}
         {navigation.map((item) => (
           <a 
             href={item.href} 
@@ -42,13 +42,15 @@ export default function Navbar() {
 
   const profileDropDown = 
     <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
-      <a href="/dashboard" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem">Dashboard</a>
-      <a href="https://github.com/gicodes/dashboardjs" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem">Github</a>
+      {/* Active: "bg-gray-100 outline-none", Not Active: ""  */}
+      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-0">Dashboard</a>
+      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-1">Settings</a>
+      <a href="#" className="block px-4 py-2 text-sm text-gray-700" tabIndex={-1} role="menuitem" id="user-menu-item-2">Sign out</a>
     </div>
 
   return (
     <nav className="bg-gray-800">
-      <div className="px-3 mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div 
             onClick={handleSmMenuDropDown}
@@ -109,9 +111,7 @@ export default function Navbar() {
                 <button type="button" className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                   <span className="absolute -inset-1.5"></span>
                   <span className="sr-only">Open user menu</span>
-                  <Image
-                    width={40}
-                    height={40}
+                  <img 
                     className="size-8 rounded-full" alt="Gicodes as a Profile photo placeholder"
                     src="https://media.licdn.com/dms/image/v2/D4D03AQH2gPWxPmvVIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715115476831?e=1736985600&v=beta&t=W3c7IMyw2TfRI6Lzx701U2-BRR7KykTLOj8b81dFR54"/>
                 </button>
